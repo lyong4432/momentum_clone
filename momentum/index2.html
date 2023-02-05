@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css" />
+    <title>Momentum</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+     <!-- weather -->
+     <div id ="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="center">
+
+        <!-- time -->
+        <h2 id="clock" class="time"></h2>
+
+        <!--  welcome -->
+        <form class="hidden" id="login-form">
+            <input class = "box" required maxlength ="15" type = "text" placeholder="What's your name?"/>
+        </form>
+        <h1 id = "greeting" class="hidden"></h1>
+
+        <!-- todo -->
+        <h2>Today</h2>
+        <form id = "todo-form">
+            <input class = "box" type = "text" placeholder = "Tell me what to do" required />
+        </form>
+        <ul id ="todo-list"></ul> 
+
+    
+    </div>
+   
+    <script src ="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/backgrounds.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
